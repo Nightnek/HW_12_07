@@ -37,6 +37,7 @@
 Пришлите блоксхему, где и что будет располагаться. Опишите, в каких режимах будут работать сервера.
 
 Допустим, мы имеем следующую БД:
+
 ![image](https://github.com/Nightnek/HW_12_07/assets/127677631/d569306d-9b21-4708-85e8-4cb555ec07e9)
 
 
@@ -153,7 +154,7 @@ mysql> SHOW PROCESSLIST;
 CREATE DATABASE test;
 
 Создаем таблицу:
-create table users ( id INT, name VARCHAR(50) NOT NULL, department VARCHAR(50));
+create table users ( id INT NOT NULL PRIMARY KEY, user_id int NOT NULL unique, name VARCHAR(50) NOT NULL, department VARCHAR(50));
 
 
 
